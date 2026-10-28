@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade Modal</title>
+  </head>
+  <body>
+    <main>
+      <h1>Título</h1>
+      <p>
+        Transformamos ideias complexas em experiências digitais simples,
+        intuitivas e impactantes para o usuário final.
+      </p>
+
+      <p>
+        Acreditamos que o design vai muito além da estética: trata-se de como as
+        coisas funcionam e resolvem problemas reais.
+      </p>
+
+      <p>
+        Utilizamos tecnologias modernas e as melhores práticas de mercado para
+        desenvolver sistemas rápidos, seguros e escaláveis.
+      </p>
+
+      <p>
+        Nossa missão é conectar marcas e pessoas através de interfaces limpas,
+        código otimizado e estratégias focadas em resultados.
+      </p>
+
+      <p>
+        Do conceito inicial ao lançamento, cada linha de código e pixel são
+        planejados para entregar a máxima performance.
+      </p>
+
+      <p>
+        Inovação constante não é apenas um objetivo para nós, mas o combustível
+        que move nosso processo criativo diário.
+      </p>
+
+      <p>
+        O sucesso não acontece por acaso; ele é o resultado direto da
+        consistência, do foco e de pequenos hábitos diários.
+      </p>
+
+      <p>
+        Aprender a priorizar o que realmente importa é o primeiro passo para
+        assumir o controle do seu tempo e da sua rotina.
+      </p>
+
+      <p>
+        Grandes conquistas são construídas através de metas claras e da coragem
+        de dar o primeiro passo, mesmo diante de incertezas.
+      </p>
+
+      <p>
+        Mantenha a mente aberta para novos aprendizados e lembre-se de que os
+        erros são apenas degraus no caminho da evolução.
+      </p>
+
+      <p>
+        A verdadeira produtividade não significa fazer mais coisas, mas sim
+        fazer as coisas certas com a energia correta.
+      </p>
+
+      <p>
+        Celebre o progresso, não apenas a perfeição, e reconheça o valor de cada
+        etapa da sua jornada de crescimento.
+      </p>
+    </main>
+
+    <section class="modal">
+      <div>
+        <h2>Confirme a entrada</h2>
+        <p>Você está prestes a acessar o evento. Deseja continuar?</p>
+        <p>
+          <button type="button">Cancelar</button>
+          <button type="button" onclick="entrar()">Entrar</button>
+        </p>
+      </div>
+    </section>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .modal {
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .modal div {
+        background-color: white;
+        width: 28vw;
+        height: 22vw;
+        border-radius: 10px 18px;
+        margin: 10vw auto;
+        padding: 2vw 4vw;
+      }
+
+      .modal div h2 {
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+      }
+    </style>
+    <script>
+      function entrar() {
+        console.log("Entrou");
+        document.querySelector(".modal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
